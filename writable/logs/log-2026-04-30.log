@@ -1,0 +1,769 @@
+CRITICAL - 2026-04-30 07:13:21 --> Error: Class "Services" not found
+[Method: GET, Route: dashboard]
+in APPPATH\Config\Routes.php on line 8.
+ 1 SYSTEMPATH\Router\RouteCollection.php(339): require()
+ 2 SYSTEMPATH\CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 07:15:06 --> Error: Class "Services" not found
+[Method: GET, Route: dashboard]
+in APPPATH\Config\Routes.php on line 8.
+ 1 SYSTEMPATH\Router\RouteCollection.php(339): require()
+ 2 SYSTEMPATH\CodeIgniter.php(818): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 08:17:06 --> ErrorException: Undefined variable $mahasiswa
+[Method: GET, Route: dosen]
+in APPPATH\Views\dosen\index.php on line 12.
+ 1 APPPATH\Views\dosen\index.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mahasiswa', 'C:\\xampp\\htdocs\\siakad_unipi\\app\\Views\\dosen\\index.php', 12)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\siakad_unipi\\app\\Views\\dosen\\index.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('dosen/index', [], true)
+ 5 APPPATH\Controllers\Dosen.php(18): view('dosen/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 14:23:05 --> ErrorException: Undefined variable $mahasiswa
+[Method: GET, Route: dosen]
+in APPPATH\Views\dosen\index.php on line 12.
+ 1 APPPATH\Views\dosen\index.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mahasiswa', 'C:\\xampp\\htdocs\\siakad_unipi\\app\\Views\\dosen\\index.php', 12)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\siakad_unipi\\app\\Views\\dosen\\index.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('dosen/index', [], true)
+ 5 APPPATH\Controllers\Dosen.php(18): view('dosen/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 14:26:57 --> ErrorException: Undefined variable $m
+[Method: GET, Route: dosen]
+in APPPATH\Views\dosen\index.php on line 14.
+ 1 APPPATH\Views\dosen\index.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $m', 'C:\\xampp\\htdocs\\siakad_unipi\\app\\Views\\dosen\\index.php', 14)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\siakad_unipi\\app\\Views\\dosen\\index.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('dosen/index', [], true)
+ 5 APPPATH\Controllers\Dosen.php(18): view('dosen/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-30 14:28:08 --> Column 'nidn' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (:nidn:, :nama_dosen:)', [...], false)
+ 5 APPPATH\Controllers\Dosen.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->simpan()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 14:28:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'nidn' cannot be null
+[Method: POST, Route: dosen/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (:nidn:, :nama_dosen:)', [...], false)
+ 2 APPPATH\Controllers\Dosen.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->simpan()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 14:28:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'nidn' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (:nidn:, :nama_dosen:)', [...], false)
+ 4 APPPATH\Controllers\Dosen.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->simpan()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 14:28:08 --> [Caused by] mysqli_sql_exception: Column 'nidn' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (:nidn:, :nama_dosen:)', [...], false)
+ 5 APPPATH\Controllers\Dosen.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->simpan()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-30 14:30:21 --> Column 'nidn' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (:nidn:, :nama_dosen:)', [...], false)
+ 5 APPPATH\Controllers\Dosen.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->simpan()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 14:30:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'nidn' cannot be null
+[Method: POST, Route: dosen/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (:nidn:, :nama_dosen:)', [...], false)
+ 2 APPPATH\Controllers\Dosen.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->simpan()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 14:30:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'nidn' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (:nidn:, :nama_dosen:)', [...], false)
+ 4 APPPATH\Controllers\Dosen.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->simpan()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 14:30:21 --> [Caused by] mysqli_sql_exception: Column 'nidn' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (:nidn:, :nama_dosen:)', [...], false)
+ 5 APPPATH\Controllers\Dosen.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->simpan()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-30 14:30:27 --> Column 'nidn' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (:nidn:, :nama_dosen:)', [...], false)
+ 5 APPPATH\Controllers\Dosen.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->simpan()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 14:30:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'nidn' cannot be null
+[Method: POST, Route: dosen/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (:nidn:, :nama_dosen:)', [...], false)
+ 2 APPPATH\Controllers\Dosen.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->simpan()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 14:30:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'nidn' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (:nidn:, :nama_dosen:)', [...], false)
+ 4 APPPATH\Controllers\Dosen.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->simpan()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 14:30:27 --> [Caused by] mysqli_sql_exception: Column 'nidn' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (:nidn:, :nama_dosen:)', [...], false)
+ 5 APPPATH\Controllers\Dosen.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->simpan()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-30 14:30:49 --> Column 'nidn' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (:nidn:, :nama_dosen:)', [...], false)
+ 5 APPPATH\Controllers\Dosen.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->simpan()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 14:30:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'nidn' cannot be null
+[Method: POST, Route: dosen/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (:nidn:, :nama_dosen:)', [...], false)
+ 2 APPPATH\Controllers\Dosen.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->simpan()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 14:30:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'nidn' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (:nidn:, :nama_dosen:)', [...], false)
+ 4 APPPATH\Controllers\Dosen.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->simpan()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 14:30:49 --> [Caused by] mysqli_sql_exception: Column 'nidn' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (:nidn:, :nama_dosen:)', [...], false)
+ 5 APPPATH\Controllers\Dosen.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->simpan()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-30 14:36:30 --> Column 'nidn' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (:nidn:, :nama_dosen:)', [...], false)
+ 5 APPPATH\Controllers\Dosen.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->simpan()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 14:36:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'nidn' cannot be null
+[Method: POST, Route: dosen/simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (:nidn:, :nama_dosen:)', [...], false)
+ 2 APPPATH\Controllers\Dosen.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->simpan()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 14:36:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'nidn' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (:nidn:, :nama_dosen:)', [...], false)
+ 4 APPPATH\Controllers\Dosen.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->simpan()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 14:36:30 --> [Caused by] mysqli_sql_exception: Column 'nidn' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (NULL, \'abah udin\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dosen` (`nidn`, `nama_dosen`) VALUES (:nidn:, :nama_dosen:)', [...], false)
+ 5 APPPATH\Controllers\Dosen.php(28): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->simpan()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-30 14:39:28 --> Lock wait timeout exceeded; try restarting transaction
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `dosen` SET `nama_dosen` = \'abah udin, m.pd\'
+WHERE `nidn` = \'010\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `dosen` SET `nama_dosen` = \'abah udin, m.pd\'
+WHERE `nidn` = \'010\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `dosen` SET `nama_dosen` = \'abah udin, m.pd\'
+WHERE `nidn` = \'010\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `dosen` SET `nama_dosen` = :nama_dosen:
+WHERE `nidn` = :nidn:', [...], false)
+ 5 APPPATH\Controllers\Dosen.php(50): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->update('010')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 14:39:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Lock wait timeout exceeded; try restarting transaction
+[Method: POST, Route: dosen/update/010]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `dosen` SET `nama_dosen` = :nama_dosen:
+WHERE `nidn` = :nidn:', [...], false)
+ 2 APPPATH\Controllers\Dosen.php(50): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->update('010')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 14:39:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Lock wait timeout exceeded; try restarting transaction
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `dosen` SET `nama_dosen` = \'abah udin, m.pd\'
+WHERE `nidn` = \'010\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `dosen` SET `nama_dosen` = \'abah udin, m.pd\'
+WHERE `nidn` = \'010\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `dosen` SET `nama_dosen` = :nama_dosen:
+WHERE `nidn` = :nidn:', [...], false)
+ 4 APPPATH\Controllers\Dosen.php(50): CodeIgniter\Database\BaseBuilder->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->update('010')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 14:39:28 --> [Caused by] mysqli_sql_exception: Lock wait timeout exceeded; try restarting transaction
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `dosen` SET `nama_dosen` = \'abah udin, m.pd\'
+WHERE `nidn` = \'010\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `dosen` SET `nama_dosen` = \'abah udin, m.pd\'
+WHERE `nidn` = \'010\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `dosen` SET `nama_dosen` = \'abah udin, m.pd\'
+WHERE `nidn` = \'010\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `dosen` SET `nama_dosen` = :nama_dosen:
+WHERE `nidn` = :nidn:', [...], false)
+ 5 APPPATH\Controllers\Dosen.php(50): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->update('010')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-30 14:44:00 --> Lock wait timeout exceeded; try restarting transaction
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `dosen` SET `nama_dosen` = \'abah udin, m.pd\'
+WHERE `nidn` = \'010\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `dosen` SET `nama_dosen` = \'abah udin, m.pd\'
+WHERE `nidn` = \'010\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `dosen` SET `nama_dosen` = \'abah udin, m.pd\'
+WHERE `nidn` = \'010\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `dosen` SET `nama_dosen` = :nama_dosen:
+WHERE `nidn` = :nidn:', [...], false)
+ 5 APPPATH\Controllers\Dosen.php(50): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->update('010')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 14:44:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Lock wait timeout exceeded; try restarting transaction
+[Method: POST, Route: dosen/update/010]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `dosen` SET `nama_dosen` = :nama_dosen:
+WHERE `nidn` = :nidn:', [...], false)
+ 2 APPPATH\Controllers\Dosen.php(50): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->update('010')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 14:44:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Lock wait timeout exceeded; try restarting transaction
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `dosen` SET `nama_dosen` = \'abah udin, m.pd\'
+WHERE `nidn` = \'010\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `dosen` SET `nama_dosen` = \'abah udin, m.pd\'
+WHERE `nidn` = \'010\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `dosen` SET `nama_dosen` = :nama_dosen:
+WHERE `nidn` = :nidn:', [...], false)
+ 4 APPPATH\Controllers\Dosen.php(50): CodeIgniter\Database\BaseBuilder->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->update('010')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 14:44:00 --> [Caused by] mysqli_sql_exception: Lock wait timeout exceeded; try restarting transaction
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('UPDATE `dosen` SET `nama_dosen` = \'abah udin, m.pd\'
+WHERE `nidn` = \'010\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `dosen` SET `nama_dosen` = \'abah udin, m.pd\'
+WHERE `nidn` = \'010\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `dosen` SET `nama_dosen` = \'abah udin, m.pd\'
+WHERE `nidn` = \'010\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `dosen` SET `nama_dosen` = :nama_dosen:
+WHERE `nidn` = :nidn:', [...], false)
+ 5 APPPATH\Controllers\Dosen.php(50): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->update('010')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 14:53:18 --> ErrorException: Maximum execution time of 120 seconds exceeded
+[Method: POST, Route: dosen/update/10001]
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 301.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-04-30 14:53:18 --> ErrorException: Maximum execution time of 120 seconds exceeded
+[Method: POST, Route: dosen/update/010]
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 301.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2026-04-30 15:01:39 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\siakad_unipi\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\siakad_unipi\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_unipi_240511...', 3306, '', 0)
+#1 C:\xampp\htdocs\siakad_unipi\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\siakad_unipi\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\siakad_unipi\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `dosen` ...', Array, false)
+#4 C:\xampp\htdocs\siakad_unipi\app\Controllers\Dosen.php(50): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\siakad_unipi\system\CodeIgniter.php(951): App\Controllers\Dosen->update('010')
+#6 C:\xampp\htdocs\siakad_unipi\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+#7 C:\xampp\htdocs\siakad_unipi\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\siakad_unipi\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\siakad_unipi\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\siakad_unipi\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\siakad_unipi\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\siakad_unipi\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\siakad_unipi\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\siakad_unipi\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `dosen` ...', Array, false)
+#3 C:\xampp\htdocs\siakad_unipi\app\Controllers\Dosen.php(50): CodeIgniter\Database\BaseBuilder->update(Array)
+#4 C:\xampp\htdocs\siakad_unipi\system\CodeIgniter.php(951): App\Controllers\Dosen->update('010')
+#5 C:\xampp\htdocs\siakad_unipi\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+#6 C:\xampp\htdocs\siakad_unipi\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\siakad_unipi\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\siakad_unipi\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\siakad_unipi\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2026-04-30 15:01:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: dosen/update/010]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `dosen` SET `nama_dosen` = :nama_dosen:
+WHERE `nidn` = :nidn:', [...], false)
+ 3 APPPATH\Controllers\Dosen.php(50): CodeIgniter\Database\BaseBuilder->update([...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->update('010')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-30 15:01:49 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\siakad_unipi\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\siakad_unipi\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_unipi_240511...', 3306, '', 0)
+#1 C:\xampp\htdocs\siakad_unipi\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\siakad_unipi\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\siakad_unipi\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad_unipi\app\Controllers\Dosen.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad_unipi\system\CodeIgniter.php(951): App\Controllers\Dosen->edit('010')
+#6 C:\xampp\htdocs\siakad_unipi\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+#7 C:\xampp\htdocs\siakad_unipi\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\siakad_unipi\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\siakad_unipi\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\siakad_unipi\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\siakad_unipi\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\siakad_unipi\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\siakad_unipi\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\siakad_unipi\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\siakad_unipi\app\Controllers\Dosen.php(40): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\siakad_unipi\system\CodeIgniter.php(951): App\Controllers\Dosen->edit('010')
+#5 C:\xampp\htdocs\siakad_unipi\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+#6 C:\xampp\htdocs\siakad_unipi\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\siakad_unipi\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\siakad_unipi\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\siakad_unipi\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2026-04-30 15:01:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: dosen/edit/010]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `dosen`
+WHERE `nidn` = :nidn:', [...], false)
+ 3 APPPATH\Controllers\Dosen.php(40): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->edit('010')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-30 15:01:59 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\siakad_unipi\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\siakad_unipi\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_unipi_240511...', 3306, '', 0)
+#1 C:\xampp\htdocs\siakad_unipi\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\siakad_unipi\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\siakad_unipi\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad_unipi\app\Controllers\Dosen.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad_unipi\system\CodeIgniter.php(951): App\Controllers\Dosen->index()
+#6 C:\xampp\htdocs\siakad_unipi\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+#7 C:\xampp\htdocs\siakad_unipi\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\siakad_unipi\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\siakad_unipi\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\siakad_unipi\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\siakad_unipi\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\siakad_unipi\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\siakad_unipi\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\siakad_unipi\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\siakad_unipi\app\Controllers\Dosen.php(16): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\siakad_unipi\system\CodeIgniter.php(951): App\Controllers\Dosen->index()
+#5 C:\xampp\htdocs\siakad_unipi\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+#6 C:\xampp\htdocs\siakad_unipi\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\siakad_unipi\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\siakad_unipi\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\siakad_unipi\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2026-04-30 15:01:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: dosen]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `dosen`', [], false)
+ 3 APPPATH\Controllers\Dosen.php(16): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-30 15:02:07 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\siakad_unipi\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\siakad_unipi\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_unipi_240511...', 3306, '', 0)
+#1 C:\xampp\htdocs\siakad_unipi\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\siakad_unipi\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\siakad_unipi\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\siakad_unipi\app\Controllers\Dosen.php(16): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\siakad_unipi\system\CodeIgniter.php(951): App\Controllers\Dosen->index()
+#6 C:\xampp\htdocs\siakad_unipi\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+#7 C:\xampp\htdocs\siakad_unipi\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\siakad_unipi\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\siakad_unipi\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\siakad_unipi\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\siakad_unipi\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\siakad_unipi\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\siakad_unipi\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\siakad_unipi\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\siakad_unipi\app\Controllers\Dosen.php(16): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\siakad_unipi\system\CodeIgniter.php(951): App\Controllers\Dosen->index()
+#5 C:\xampp\htdocs\siakad_unipi\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+#6 C:\xampp\htdocs\siakad_unipi\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\siakad_unipi\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\siakad_unipi\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\siakad_unipi\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2026-04-30 15:02:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: dosen]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `dosen`', [], false)
+ 3 APPPATH\Controllers\Dosen.php(16): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dosen->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dosen))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 15:13:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "matakuliah/index.php"
+[Method: GET, Route: matakuliah]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('matakuliah/index.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('matakuliah/index', [], true)
+ 3 APPPATH\Controllers\MataKuliah.php(18): view('matakuliah/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\MataKuliah->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MataKuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-30 15:44:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-30 15:51:19 --> Unknown column 'nim' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT * FROM v_transkrip_mahasiswa WHERE nim = \'2405001\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM v_transkrip_mahasiswa WHERE nim = \'2405001\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM v_transkrip_mahasiswa WHERE nim = \'2405001\'')
+ 4 APPPATH\Controllers\Transkrip.php(23): CodeIgniter\Database\BaseConnection->query('SELECT * FROM v_transkrip_mahasiswa WHERE nim = ?', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Transkrip->detail('2405001')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transkrip))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 15:51:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nim' in 'where clause'
+[Method: GET, Route: transkrip/2405001]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 APPPATH\Controllers\Transkrip.php(23): CodeIgniter\Database\BaseConnection->query('SELECT * FROM v_transkrip_mahasiswa WHERE nim = ?', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Transkrip->detail('2405001')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transkrip))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 15:51:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nim' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM v_transkrip_mahasiswa WHERE nim = \'2405001\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM v_transkrip_mahasiswa WHERE nim = \'2405001\'')
+ 3 APPPATH\Controllers\Transkrip.php(23): CodeIgniter\Database\BaseConnection->query('SELECT * FROM v_transkrip_mahasiswa WHERE nim = ?', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Transkrip->detail('2405001')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transkrip))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 15:51:19 --> [Caused by] mysqli_sql_exception: Unknown column 'nim' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT * FROM v_transkrip_mahasiswa WHERE nim = \'2405001\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM v_transkrip_mahasiswa WHERE nim = \'2405001\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM v_transkrip_mahasiswa WHERE nim = \'2405001\'')
+ 4 APPPATH\Controllers\Transkrip.php(23): CodeIgniter\Database\BaseConnection->query('SELECT * FROM v_transkrip_mahasiswa WHERE nim = ?', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Transkrip->detail('2405001')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transkrip))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 16:02:30 --> ErrorException: Undefined array key "ipk"
+[Method: GET, Route: laporan]
+in APPPATH\Views\laporan\index.php on line 14.
+ 1 APPPATH\Views\laporan\index.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ipk"', 'C:\\xampp\\htdocs\\siakad_unipi\\app\\Views\\laporan\\index.php', 14)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\siakad_unipi\\app\\Views\\laporan\\index.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('laporan/index', [], true)
+ 5 APPPATH\Controllers\Laporan.php(20): view('laporan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Laporan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 16:03:58 --> ErrorException: Undefined array key "jumlah_matkul"
+[Method: GET, Route: laporan]
+in APPPATH\Views\laporan\index.php on line 30.
+ 1 APPPATH\Views\laporan\index.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jumlah_matkul"', 'C:\\xampp\\htdocs\\siakad_unipi\\app\\Views\\laporan\\index.php', 30)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\siakad_unipi\\app\\Views\\laporan\\index.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('laporan/index', [], true)
+ 5 APPPATH\Controllers\Laporan.php(20): view('laporan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Laporan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 16:04:00 --> ErrorException: Undefined array key "jumlah_matkul"
+[Method: GET, Route: laporan]
+in APPPATH\Views\laporan\index.php on line 30.
+ 1 APPPATH\Views\laporan\index.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jumlah_matkul"', 'C:\\xampp\\htdocs\\siakad_unipi\\app\\Views\\laporan\\index.php', 30)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\siakad_unipi\\app\\Views\\laporan\\index.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('laporan/index', [], true)
+ 5 APPPATH\Controllers\Laporan.php(20): view('laporan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Laporan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 16:04:01 --> ErrorException: Undefined array key "jumlah_matkul"
+[Method: GET, Route: laporan]
+in APPPATH\Views\laporan\index.php on line 30.
+ 1 APPPATH\Views\laporan\index.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jumlah_matkul"', 'C:\\xampp\\htdocs\\siakad_unipi\\app\\Views\\laporan\\index.php', 30)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\siakad_unipi\\app\\Views\\laporan\\index.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('laporan/index', [], true)
+ 5 APPPATH\Controllers\Laporan.php(20): view('laporan/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Laporan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-30 16:31:50 --> Unknown column 'rata_rata' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT * FROM v_rekap_ipk ORDER BY rata_rata DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM v_rekap_ipk ORDER BY rata_rata DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM v_rekap_ipk ORDER BY rata_rata DESC')
+ 4 APPPATH\Models\TugasBesarModel.php(33): CodeIgniter\Database\BaseConnection->query('SELECT * FROM v_rekap_ipk ORDER BY rata_rata DESC')
+ 5 APPPATH\Controllers\Dashboard.php(13): App\Models\TugasBesarModel->getRekapIPK()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 16:31:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'rata_rata' in 'order clause'
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 APPPATH\Models\TugasBesarModel.php(33): CodeIgniter\Database\BaseConnection->query('SELECT * FROM v_rekap_ipk ORDER BY rata_rata DESC')
+ 2 APPPATH\Controllers\Dashboard.php(13): App\Models\TugasBesarModel->getRekapIPK()
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 16:31:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'rata_rata' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM v_rekap_ipk ORDER BY rata_rata DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM v_rekap_ipk ORDER BY rata_rata DESC')
+ 3 APPPATH\Models\TugasBesarModel.php(33): CodeIgniter\Database\BaseConnection->query('SELECT * FROM v_rekap_ipk ORDER BY rata_rata DESC')
+ 4 APPPATH\Controllers\Dashboard.php(13): App\Models\TugasBesarModel->getRekapIPK()
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-30 16:31:50 --> [Caused by] mysqli_sql_exception: Unknown column 'rata_rata' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT * FROM v_rekap_ipk ORDER BY rata_rata DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM v_rekap_ipk ORDER BY rata_rata DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM v_rekap_ipk ORDER BY rata_rata DESC')
+ 4 APPPATH\Models\TugasBesarModel.php(33): CodeIgniter\Database\BaseConnection->query('SELECT * FROM v_rekap_ipk ORDER BY rata_rata DESC')
+ 5 APPPATH\Controllers\Dashboard.php(13): App\Models\TugasBesarModel->getRekapIPK()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -1,0 +1,499 @@
+CRITICAL - 2026-05-05 14:55:21 --> ErrorException: Undefined array key "rata_rata"
+[Method: GET, Route: /]
+in APPPATH\Views\dashboard\index.php on line 94.
+ 1 APPPATH\Views\dashboard\index.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rata_rata"', 'C:\\xampp\\htdocs\\siakad_unipi\\app\\Views\\dashboard\\index.php', 94)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\siakad_unipi\\app\\Views\\dashboard\\index.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('dashboard/index', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(40): view('dashboard/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-05 14:55:22 --> ErrorException: Undefined array key "rata_rata"
+[Method: GET, Route: /]
+in APPPATH\Views\dashboard\index.php on line 94.
+ 1 APPPATH\Views\dashboard\index.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rata_rata"', 'C:\\xampp\\htdocs\\siakad_unipi\\app\\Views\\dashboard\\index.php', 94)
+ 2 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\siakad_unipi\\app\\Views\\dashboard\\index.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('dashboard/index', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(40): view('dashboard/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-05-05 15:42:34 --> Unknown column 'rata_rata' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('CALL sp_status_lulus(\'2405001\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_status_lulus(\'2405001\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_status_lulus(\'2405001\')')
+ 4 APPPATH\Controllers\Transkrip.php(30): CodeIgniter\Database\BaseConnection->query('CALL sp_status_lulus(?)', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Transkrip->detail('2405001')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transkrip))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-05 15:42:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'rata_rata' in 'field list'
+[Method: GET, Route: transkrip/2405001]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 APPPATH\Controllers\Transkrip.php(30): CodeIgniter\Database\BaseConnection->query('CALL sp_status_lulus(?)', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Transkrip->detail('2405001')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transkrip))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-05 15:42:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'rata_rata' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_status_lulus(\'2405001\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_status_lulus(\'2405001\')')
+ 3 APPPATH\Controllers\Transkrip.php(30): CodeIgniter\Database\BaseConnection->query('CALL sp_status_lulus(?)', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Transkrip->detail('2405001')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transkrip))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-05 15:42:34 --> [Caused by] mysqli_sql_exception: Unknown column 'rata_rata' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('CALL sp_status_lulus(\'2405001\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_status_lulus(\'2405001\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_status_lulus(\'2405001\')')
+ 4 APPPATH\Controllers\Transkrip.php(30): CodeIgniter\Database\BaseConnection->query('CALL sp_status_lulus(?)', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Transkrip->detail('2405001')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transkrip))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-05-05 15:43:23 --> Unknown column 'rata_rata' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('CALL sp_status_lulus(\'2405001\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_status_lulus(\'2405001\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_status_lulus(\'2405001\')')
+ 4 APPPATH\Controllers\Transkrip.php(30): CodeIgniter\Database\BaseConnection->query('CALL sp_status_lulus(?)', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Transkrip->detail('2405001')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transkrip))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-05 15:43:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'rata_rata' in 'field list'
+[Method: GET, Route: transkrip/2405001]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 APPPATH\Controllers\Transkrip.php(30): CodeIgniter\Database\BaseConnection->query('CALL sp_status_lulus(?)', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Transkrip->detail('2405001')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transkrip))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-05 15:43:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'rata_rata' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_status_lulus(\'2405001\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_status_lulus(\'2405001\')')
+ 3 APPPATH\Controllers\Transkrip.php(30): CodeIgniter\Database\BaseConnection->query('CALL sp_status_lulus(?)', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Transkrip->detail('2405001')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transkrip))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-05 15:43:23 --> [Caused by] mysqli_sql_exception: Unknown column 'rata_rata' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('CALL sp_status_lulus(\'2405001\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_status_lulus(\'2405001\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_status_lulus(\'2405001\')')
+ 4 APPPATH\Controllers\Transkrip.php(30): CodeIgniter\Database\BaseConnection->query('CALL sp_status_lulus(?)', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Transkrip->detail('2405001')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transkrip))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-05-05 15:43:39 --> Unknown column 'rata_rata' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('CALL sp_status_lulus(\'2405001\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_status_lulus(\'2405001\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_status_lulus(\'2405001\')')
+ 4 APPPATH\Controllers\Transkrip.php(30): CodeIgniter\Database\BaseConnection->query('CALL sp_status_lulus(?)', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Transkrip->detail('2405001')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transkrip))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-05 15:43:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'rata_rata' in 'field list'
+[Method: GET, Route: transkrip/2405001]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 APPPATH\Controllers\Transkrip.php(30): CodeIgniter\Database\BaseConnection->query('CALL sp_status_lulus(?)', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Transkrip->detail('2405001')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transkrip))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-05 15:43:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'rata_rata' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_status_lulus(\'2405001\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_status_lulus(\'2405001\')')
+ 3 APPPATH\Controllers\Transkrip.php(30): CodeIgniter\Database\BaseConnection->query('CALL sp_status_lulus(?)', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Transkrip->detail('2405001')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transkrip))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-05 15:43:39 --> [Caused by] mysqli_sql_exception: Unknown column 'rata_rata' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('CALL sp_status_lulus(\'2405001\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_status_lulus(\'2405001\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_status_lulus(\'2405001\')')
+ 4 APPPATH\Controllers\Transkrip.php(30): CodeIgniter\Database\BaseConnection->query('CALL sp_status_lulus(?)', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Transkrip->detail('2405001')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transkrip))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-05-05 15:43:50 --> Unknown column 'rata_rata' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('CALL sp_status_lulus(\'2405001\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_status_lulus(\'2405001\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_status_lulus(\'2405001\')')
+ 4 APPPATH\Controllers\Transkrip.php(30): CodeIgniter\Database\BaseConnection->query('CALL sp_status_lulus(?)', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Transkrip->detail('2405001')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transkrip))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-05 15:43:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'rata_rata' in 'field list'
+[Method: GET, Route: transkrip/2405001]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 APPPATH\Controllers\Transkrip.php(30): CodeIgniter\Database\BaseConnection->query('CALL sp_status_lulus(?)', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Transkrip->detail('2405001')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transkrip))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-05 15:43:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'rata_rata' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_status_lulus(\'2405001\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_status_lulus(\'2405001\')')
+ 3 APPPATH\Controllers\Transkrip.php(30): CodeIgniter\Database\BaseConnection->query('CALL sp_status_lulus(?)', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Transkrip->detail('2405001')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transkrip))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-05 15:43:50 --> [Caused by] mysqli_sql_exception: Unknown column 'rata_rata' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('CALL sp_status_lulus(\'2405001\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('CALL sp_status_lulus(\'2405001\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('CALL sp_status_lulus(\'2405001\')')
+ 4 APPPATH\Controllers\Transkrip.php(30): CodeIgniter\Database\BaseConnection->query('CALL sp_status_lulus(?)', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Transkrip->detail('2405001')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transkrip))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-05-05 16:28:25 --> Unknown column 'l.id_kelas' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                l.id_log,
+                m.nama_mahasiswa,
+                mk.nama_mk,
+                l.nilai_lama,
+                l.nilai_baru,
+                l.aksi,
+                l.waktu
+            FROM log_nilai l
+            LEFT JOIN mahasiswa m ON l.nim = m.nim
+            LEFT JOIN kelas k ON l.id_kelas = k.id_kelas
+            LEFT JOIN mata_kuliah mk ON k.kode_mk = mk.kode_mk
+            ORDER BY l.waktu DESC
+            LIMIT 50
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                l.id_log,
+                m.nama_mahasiswa,
+                mk.nama_mk,
+                l.nilai_lama,
+                l.nilai_baru,
+                l.aksi,
+                l.waktu
+            FROM log_nilai l
+            LEFT JOIN mahasiswa m ON l.nim = m.nim
+            LEFT JOIN kelas k ON l.id_kelas = k.id_kelas
+            LEFT JOIN mata_kuliah mk ON k.kode_mk = mk.kode_mk
+            ORDER BY l.waktu DESC
+            LIMIT 50
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                l.id_log,
+                m.nama_mahasiswa,
+                mk.nama_mk,
+                l.nilai_lama,
+                l.nilai_baru,
+                l.aksi,
+                l.waktu
+            FROM log_nilai l
+            LEFT JOIN mahasiswa m ON l.nim = m.nim
+            LEFT JOIN kelas k ON l.id_kelas = k.id_kelas
+            LEFT JOIN mata_kuliah mk ON k.kode_mk = mk.kode_mk
+            ORDER BY l.waktu DESC
+            LIMIT 50
+        ')
+ 4 APPPATH\Controllers\LogAktivitas.php(16): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                l.id_log,
+                m.nama_mahasiswa,
+                mk.nama_mk,
+                l.nilai_lama,
+                l.nilai_baru,
+                l.aksi,
+                l.waktu
+            FROM log_nilai l
+            LEFT JOIN mahasiswa m ON l.nim = m.nim
+            LEFT JOIN kelas k ON l.id_kelas = k.id_kelas
+            LEFT JOIN mata_kuliah mk ON k.kode_mk = mk.kode_mk
+            ORDER BY l.waktu DESC
+            LIMIT 50
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\LogAktivitas->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LogAktivitas))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-05 16:28:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'l.id_kelas' in 'on clause'
+[Method: GET, Route: log-aktivitas]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 APPPATH\Controllers\LogAktivitas.php(16): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                l.id_log,
+                m.nama_mahasiswa,
+                mk.nama_mk,
+                l.nilai_lama,
+                l.nilai_baru,
+                l.aksi,
+                l.waktu
+            FROM log_nilai l
+            LEFT JOIN mahasiswa m ON l.nim = m.nim
+            LEFT JOIN kelas k ON l.id_kelas = k.id_kelas
+            LEFT JOIN mata_kuliah mk ON k.kode_mk = mk.kode_mk
+            ORDER BY l.waktu DESC
+            LIMIT 50
+        ')
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\LogAktivitas->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LogAktivitas))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-05 16:28:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'l.id_kelas' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                l.id_log,
+                m.nama_mahasiswa,
+                mk.nama_mk,
+                l.nilai_lama,
+                l.nilai_baru,
+                l.aksi,
+                l.waktu
+            FROM log_nilai l
+            LEFT JOIN mahasiswa m ON l.nim = m.nim
+            LEFT JOIN kelas k ON l.id_kelas = k.id_kelas
+            LEFT JOIN mata_kuliah mk ON k.kode_mk = mk.kode_mk
+            ORDER BY l.waktu DESC
+            LIMIT 50
+        ')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                l.id_log,
+                m.nama_mahasiswa,
+                mk.nama_mk,
+                l.nilai_lama,
+                l.nilai_baru,
+                l.aksi,
+                l.waktu
+            FROM log_nilai l
+            LEFT JOIN mahasiswa m ON l.nim = m.nim
+            LEFT JOIN kelas k ON l.id_kelas = k.id_kelas
+            LEFT JOIN mata_kuliah mk ON k.kode_mk = mk.kode_mk
+            ORDER BY l.waktu DESC
+            LIMIT 50
+        ')
+ 3 APPPATH\Controllers\LogAktivitas.php(16): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                l.id_log,
+                m.nama_mahasiswa,
+                mk.nama_mk,
+                l.nilai_lama,
+                l.nilai_baru,
+                l.aksi,
+                l.waktu
+            FROM log_nilai l
+            LEFT JOIN mahasiswa m ON l.nim = m.nim
+            LEFT JOIN kelas k ON l.id_kelas = k.id_kelas
+            LEFT JOIN mata_kuliah mk ON k.kode_mk = mk.kode_mk
+            ORDER BY l.waktu DESC
+            LIMIT 50
+        ')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\LogAktivitas->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LogAktivitas))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-05 16:28:25 --> [Caused by] mysqli_sql_exception: Unknown column 'l.id_kelas' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('
+            SELECT 
+                l.id_log,
+                m.nama_mahasiswa,
+                mk.nama_mk,
+                l.nilai_lama,
+                l.nilai_baru,
+                l.aksi,
+                l.waktu
+            FROM log_nilai l
+            LEFT JOIN mahasiswa m ON l.nim = m.nim
+            LEFT JOIN kelas k ON l.id_kelas = k.id_kelas
+            LEFT JOIN mata_kuliah mk ON k.kode_mk = mk.kode_mk
+            ORDER BY l.waktu DESC
+            LIMIT 50
+        ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('
+            SELECT 
+                l.id_log,
+                m.nama_mahasiswa,
+                mk.nama_mk,
+                l.nilai_lama,
+                l.nilai_baru,
+                l.aksi,
+                l.waktu
+            FROM log_nilai l
+            LEFT JOIN mahasiswa m ON l.nim = m.nim
+            LEFT JOIN kelas k ON l.id_kelas = k.id_kelas
+            LEFT JOIN mata_kuliah mk ON k.kode_mk = mk.kode_mk
+            ORDER BY l.waktu DESC
+            LIMIT 50
+        ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('
+            SELECT 
+                l.id_log,
+                m.nama_mahasiswa,
+                mk.nama_mk,
+                l.nilai_lama,
+                l.nilai_baru,
+                l.aksi,
+                l.waktu
+            FROM log_nilai l
+            LEFT JOIN mahasiswa m ON l.nim = m.nim
+            LEFT JOIN kelas k ON l.id_kelas = k.id_kelas
+            LEFT JOIN mata_kuliah mk ON k.kode_mk = mk.kode_mk
+            ORDER BY l.waktu DESC
+            LIMIT 50
+        ')
+ 4 APPPATH\Controllers\LogAktivitas.php(16): CodeIgniter\Database\BaseConnection->query('
+            SELECT 
+                l.id_log,
+                m.nama_mahasiswa,
+                mk.nama_mk,
+                l.nilai_lama,
+                l.nilai_baru,
+                l.aksi,
+                l.waktu
+            FROM log_nilai l
+            LEFT JOIN mahasiswa m ON l.nim = m.nim
+            LEFT JOIN kelas k ON l.id_kelas = k.id_kelas
+            LEFT JOIN mata_kuliah mk ON k.kode_mk = mk.kode_mk
+            ORDER BY l.waktu DESC
+            LIMIT 50
+        ')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\LogAktivitas->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LogAktivitas))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-05-05 16:43:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-05-05 17:01:12 --> Cannot delete or update a parent row: a foreign key constraint fails (`db_unipi_2405117_fikri_fahmi`.`kelas`, CONSTRAINT `kelas_ibfk_1` FOREIGN KEY (`kode_mk`) REFERENCES `mata_kuliah` (`kode_mk`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('DELETE FROM `mata_kuliah`
+WHERE `kode_mk` = \'ls04\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `mata_kuliah`
+WHERE `kode_mk` = \'ls04\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `mata_kuliah`
+WHERE `kode_mk` = \'ls04\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mata_kuliah`
+WHERE `kode_mk` = :kode_mk:', [...], false)
+ 5 APPPATH\Controllers\MataKuliah.php(63): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\MataKuliah->hapus('ls04')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MataKuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-05 17:01:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`db_unipi_2405117_fikri_fahmi`.`kelas`, CONSTRAINT `kelas_ibfk_1` FOREIGN KEY (`kode_mk`) REFERENCES `mata_kuliah` (`kode_mk`))
+[Method: GET, Route: matakuliah/hapus/ls04]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mata_kuliah`
+WHERE `kode_mk` = :kode_mk:', [...], false)
+ 2 APPPATH\Controllers\MataKuliah.php(63): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\MataKuliah->hapus('ls04')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MataKuliah))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-05 17:01:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`db_unipi_2405117_fikri_fahmi`.`kelas`, CONSTRAINT `kelas_ibfk_1` FOREIGN KEY (`kode_mk`) REFERENCES `mata_kuliah` (`kode_mk`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `mata_kuliah`
+WHERE `kode_mk` = \'ls04\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `mata_kuliah`
+WHERE `kode_mk` = \'ls04\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mata_kuliah`
+WHERE `kode_mk` = :kode_mk:', [...], false)
+ 4 APPPATH\Controllers\MataKuliah.php(63): CodeIgniter\Database\BaseBuilder->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\MataKuliah->hapus('ls04')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MataKuliah))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-05 17:01:12 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`db_unipi_2405117_fikri_fahmi`.`kelas`, CONSTRAINT `kelas_ibfk_1` FOREIGN KEY (`kode_mk`) REFERENCES `mata_kuliah` (`kode_mk`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('DELETE FROM `mata_kuliah`
+WHERE `kode_mk` = \'ls04\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `mata_kuliah`
+WHERE `kode_mk` = \'ls04\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `mata_kuliah`
+WHERE `kode_mk` = \'ls04\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mata_kuliah`
+WHERE `kode_mk` = :kode_mk:', [...], false)
+ 5 APPPATH\Controllers\MataKuliah.php(63): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\MataKuliah->hapus('ls04')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MataKuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-05-05 17:02:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-05 17:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-05 17:03:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-05-05 17:03:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
