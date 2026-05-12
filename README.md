@@ -1,6 +1,10 @@
-# Sistem Informasi Akademik (SIAKAD)
+=== SIAKAD UNIPI — Tugas Besar Basis Data 2 ===
 
-Aplikasi web akademik berbasis CodeIgniter 4 untuk implementasi Tugas Besar Basis Data 2 Universitas Persatuan Islam Kampus Cisurupan.
+Nama    : <Fikri Fahmi>
+NIM     : <2405117>
+Prodi   : Informatika
+Stack   : < CodeIgniter 4 >
+
 
 ## Fitur Utama
 - Dashboard statistik akademik
@@ -18,5 +22,3 @@ Aplikasi web akademik berbasis CodeIgniter 4 untuk implementasi Tugas Besar Basi
 - MySQL / MariaDB
 - XAMPP 8.2+
 
-## Struktur Dokumentasi
-Lihat folder `/docs` untuk dokumentasi teknis lengkap.
