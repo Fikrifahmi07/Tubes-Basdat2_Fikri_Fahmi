@@ -78,6 +78,10 @@ $routes->get('/log-aktivitas', 'LogAktivitas::index');
 
 $routes->get('/schema', 'Schema::index');
 
+$routes->get('/login', 'Auth::login');
+$routes->post('/cek-login', 'Auth::cek_login');
+$routes->get('/logout', 'Auth::logout');
+
 /*
  * Load environment Routes
  */

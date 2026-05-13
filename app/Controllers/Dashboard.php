@@ -9,10 +9,15 @@ use App\Models\MatkulModel;
 class Dashboard extends BaseController
 {
     protected $db;
-
     public function __construct()
     {
-        $this->db = \Config\Database::connect();
+    $this->db = \Config\Database::connect();
+
+    if (!session()->get('login')) {
+
+        header('Location: ' . base_url('/login'));
+        exit;
+    }
     }
 
     public function index()
@@ -38,5 +43,6 @@ class Dashboard extends BaseController
         ];
 
         return view('dashboard/index', $data);
+        
     }
 }

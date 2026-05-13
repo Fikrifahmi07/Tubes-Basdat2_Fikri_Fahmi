@@ -83,3 +83,14 @@
 ## Fixed
 - Memperbaiki tampilan responsive mobile
 - Memperbaiki struktur layout template
+
+```md id="h8d9zv"
+# Version 1.7.0
+
+## Added
+- Menambahkan fitur login admin
+- Menambahkan logout sistem
+- Menambahkan session login
+
+## Fixed
+- Memperbaiki proteksi halaman dashboard

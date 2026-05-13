@@ -43,3 +43,42 @@ Digunakan untuk menambahkan data mahasiswa baru.
   "status": "success",
   "message": "Data mahasiswa berhasil ditambahkan"
 }
+
+# Login Admin
+
+## Endpoint
+POST /cek-login
+
+---
+
+## Controller
+Auth.php
+
+---
+
+## Method
+cek_login()
+
+---
+
+## Deskripsi
+Digunakan untuk proses login admin ke dalam sistem SIAKAD.
+
+---
+
+## Parameter
+
+| Nama | Tipe |
+|---|---|
+| username | string |
+| password | string |
+
+---
+
+## Response Success
+
+```json
+{
+  "status": "success",
+  "message": "Login berhasil"
+}
