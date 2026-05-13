@@ -1,5 +1,5 @@
 <h3 style="color:white;">SIDEBAR AKTIF</h3>
-<aside class="main-sidebar sidebar-dark-primary elevation-4">
+<aside class="main-sidebar sidebar-dark-success elevation-4">
 
   <!-- Brand -->
   <a href="<?= base_url() ?>" class="brand-link">

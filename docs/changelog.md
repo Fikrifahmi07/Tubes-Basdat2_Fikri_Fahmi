@@ -94,3 +94,10 @@
 
 ## Fixed
 - Memperbaiki proteksi halaman dashboard
+
+# Version 1.8.0
+
+## Changed
+- Mengubah tampilan dashboard menjadi tema hijau
+- Mengubah warna navbar dan sidebar menjadi hijau
+- Mempercantik tampilan dashboard SIAKAD
