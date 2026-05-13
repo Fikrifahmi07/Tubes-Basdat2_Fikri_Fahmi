@@ -19,11 +19,11 @@
         </li>
 
         <li class="nav-item">
-    <a href="<?= base_url('schema') ?>" class="nav-link">
-        <i class="nav-icon fas fa-database"></i>
-        <p>Schema DB</p>
-    </a>
-</li>
+            <a href="<?= base_url('schema') ?>" class="nav-link">
+                <i class="nav-icon fas fa-database"></i>
+                <p>Schema DB</p>
+            </a>
+        </li>
 
         <li class="nav-header">DATA MASTER</li>
 

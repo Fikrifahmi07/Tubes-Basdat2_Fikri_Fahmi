@@ -101,3 +101,9 @@
 - Mengubah tampilan dashboard menjadi tema hijau
 - Mengubah warna navbar dan sidebar menjadi hijau
 - Mempercantik tampilan dashboard SIAKAD
+
+# Version 1.9.0
+
+## Added
+- Menambahkan fitur schema database dinamis
+- Schema database otomatis mengikuti perubahan database

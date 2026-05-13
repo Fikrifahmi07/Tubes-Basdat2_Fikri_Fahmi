@@ -13,23 +13,21 @@ class Schema extends BaseController
 
     public function index()
     {
-        $tabelUtama = [
-            'mahasiswa',
-            'dosen',
-            'mata_kuliah',
-            'kelas',
-            'nilai',
-            'log_nilai'
-        ];
+        // ambil semua tabel
+        $tables = $this->db->listTables();
 
         $schema = [];
 
-        foreach ($tabelUtama as $tabel) {
-            $schema[$tabel] = $this->db->getFieldData($tabel);
+        foreach ($tables as $table) {
+
+            // ambil field tiap tabel
+            $fields = $this->db->getFieldData($table);
+
+            $schema[$table] = $fields;
         }
 
-        return view('schema/index', [
-            'schema' => $schema
-        ]);
+        $data['schema'] = $schema;
+
+        return view('schema/index', $data);
     }
 }

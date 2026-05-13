@@ -60,8 +60,10 @@ Sistem dibuat untuk membantu pengelolaan data akademik kampus seperti:
 - Menampilkan aktivitas UPDATE
 - Menampilkan aktivitas DELETE
 
-## Login & logout Admin
+### Login & logout Admin
 
+
+### Schema Database Dinamis
 
 ---
 

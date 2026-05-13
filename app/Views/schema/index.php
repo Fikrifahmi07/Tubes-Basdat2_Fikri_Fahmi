@@ -1,49 +1,72 @@
 <?= $this->extend('layout/template') ?>
 <?= $this->section('content') ?>
 
-<div class="card">
-    <div class="card-header bg-primary">
-        <h3 class="card-title">Informasi Schema Database</h3>
+<div class="card shadow-sm">
+
+    <div class="card-header bg-success text-white">
+        <h3 class="card-title">
+            <i class="fas fa-database"></i>
+            Schema Database
+        </h3>
     </div>
 
     <div class="card-body">
 
-        <?php foreach ($schema as $namaTabel => $fields): ?>
-            <div class="card card-outline card-info mb-4">
-                <div class="card-header">
-                    <h4 class="card-title mb-0">
-                        Tabel: <?= ucfirst(str_replace('_', ' ', $namaTabel)) ?>
+        <?php foreach($schema as $table => $fields): ?>
+
+            <div class="card mb-4 border-success">
+
+                <div class="card-header bg-light">
+                    <h4 class="mb-0 text-success">
+                        <?= $table ?>
                     </h4>
                 </div>
 
                 <div class="card-body table-responsive">
-                    <table class="table table-bordered table-striped">
-                        <thead class="table-dark">
+
+                    <table class="table table-bordered table-hover">
+
+                        <thead class="thead-light">
                             <tr>
-                                <th>Field</th>
-                                <th>Type</th>
-                                <th>Max Length</th>
-                                <th>Primary Key</th>
+                                <th>No</th>
+                                <th>Nama Field</th>
+                                <th>Tipe Data</th>
+                                <th>Panjang</th>
                             </tr>
                         </thead>
+
                         <tbody>
-                            <?php foreach ($fields as $field): ?>
+
+                            <?php $no = 1; ?>
+
+                            <?php foreach($fields as $field): ?>
+
                             <tr>
+
+                                <td><?= $no++ ?></td>
+
                                 <td><?= $field->name ?></td>
+
                                 <td><?= $field->type ?></td>
-                                <td><?= $field->max_length ?? '-' ?></td>
-                                <td>
-                                    <?= $field->primary_key ? '<span class="badge badge-success">YES</span>' : '-' ?>
-                                </td>
+
+                                <td><?= $field->max_length ?></td>
+
                             </tr>
-                            <?php endforeach ?>
+
+                            <?php endforeach; ?>
+
                         </tbody>
+
                     </table>
+
                 </div>
+
             </div>
-        <?php endforeach ?>
+
+        <?php endforeach; ?>
 
     </div>
+
 </div>
 
 <?= $this->endSection() ?>

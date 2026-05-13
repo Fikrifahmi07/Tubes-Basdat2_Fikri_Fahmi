@@ -8,6 +8,7 @@ use Config\Services;
  */
 $routes = Services::routes();
 
+
 /*
  * Load the system's routing file first
  */
@@ -81,6 +82,8 @@ $routes->get('/schema', 'Schema::index');
 $routes->get('/login', 'Auth::login');
 $routes->post('/cek-login', 'Auth::cek_login');
 $routes->get('/logout', 'Auth::logout');
+
+$routes->get('schema', 'Schema::index');
 
 /*
  * Load environment Routes
