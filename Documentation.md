@@ -65,6 +65,8 @@ Sistem dibuat untuk membantu pengelolaan data akademik kampus seperti:
 
 ### Schema Database Dinamis
 
+### SQL Query Runner
+
 ---
 
 ## Teknologi yang Digunakan

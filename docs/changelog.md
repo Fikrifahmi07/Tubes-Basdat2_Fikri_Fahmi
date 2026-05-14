@@ -107,3 +107,9 @@
 ## Added
 - Menambahkan fitur schema database dinamis
 - Schema database otomatis mengikuti perubahan database
+
+# Version 1.9.1
+
+## Added
+- Menambahkan fitur SQL Query Runner
+- Menambahkan eksekusi query database langsung dari web

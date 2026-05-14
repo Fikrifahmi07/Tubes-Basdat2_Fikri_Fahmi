@@ -20,14 +20,42 @@ class Schema extends BaseController
 
         foreach ($tables as $table) {
 
-            // ambil field tiap tabel
             $fields = $this->db->getFieldData($table);
 
             $schema[$table] = $fields;
         }
 
-        $data['schema'] = $schema;
+        // query runner
+        $query = '';
+        $result = [];
+        $message = '';
 
-        return view('schema/index', $data);
+        if ($this->request->getMethod() === 'POST') {
+
+            $query = $this->request->getPost('query');
+
+            try {
+
+                $exec = $this->db->query($query);
+
+                if ($exec instanceof \CodeIgniter\Database\MySQLi\Result) {
+
+                    $result = $exec->getResultArray();
+                }
+
+                $message = 'Query berhasil dijalankan';
+
+            } catch (\Throwable $e) {
+
+                $message = $e->getMessage();
+            }
+        }
+
+        return view('schema/index', [
+            'schema' => $schema,
+            'query' => $query,
+            'result' => $result,
+            'message' => $message
+        ]);
     }
 }

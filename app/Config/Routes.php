@@ -77,13 +77,13 @@ $routes->get('/kelas/hapus/(:num)', 'Kelas::hapus/$1');
 
 $routes->get('/log-aktivitas', 'LogAktivitas::index');
 
-$routes->get('/schema', 'Schema::index');
+
 
 $routes->get('/login', 'Auth::login');
 $routes->post('/cek-login', 'Auth::cek_login');
 $routes->get('/logout', 'Auth::logout');
 
-$routes->get('schema', 'Schema::index');
+$routes->match(['get', 'post'], 'schema', 'Schema::index');
 
 /*
  * Load environment Routes
