@@ -113,3 +113,27 @@
 ## Added
 - Menambahkan fitur SQL Query Runner
 - Menambahkan eksekusi query database langsung dari web
+
+# Version 1.9.2
+
+## Added
+- Menambahkan log mahasiswa
+- Menambahkan log dosen
+- Menambahkan log mata kuliah
+- Menambahkan log kelas
+- Menambahkan realtime search log aktivitas
+- Menambahkan trigger database otomatis
+
+## Improved
+- Meningkatkan tampilan log aktivitas
+- Mengubah log nilai menjadi lebih informatif
+- Menambahkan nama mahasiswa pada log nilai
+- Mengubah ID kelas menjadi nama mata kuliah
+- Menambahkan Bootstrap tab navigation pada log aktivitas
+
+## Fixed
+- Memperbaiki routing schema database
+- Memperbaiki query SQL runner
+- Memperbaiki dynamic table rendering
+- Memperbaiki realtime search log
+- Memperbaiki integrasi trigger database

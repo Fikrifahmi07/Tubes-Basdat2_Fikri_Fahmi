@@ -13,22 +13,43 @@ class LogAktivitas extends BaseController
 
     public function index()
     {
-        $data['log'] = $this->db->query("
-    SELECT 
-        l.id_log,
-        m.nama_mahasiswa,
-        mk.nama_mk,
-        l.nilai_lama,
-        l.nilai_baru,
-        l.aksi,
-        l.waktu
-    FROM log_nilai l
-    LEFT JOIN mahasiswa m ON l.nim = m.nim
-    LEFT JOIN kelas k ON l.id_kelas = k.id_kelas
-    LEFT JOIN mata_kuliah mk ON k.kode_mk = mk.kode_mk
-    ORDER BY l.waktu DESC
-    LIMIT 50
-")->getResultArray();
+        $db = \Config\Database::connect();
+
+        $data = [
+
+            'log_nilai' => $db->table('log_nilai')
+                ->select('
+                    log_nilai.*,
+                    mahasiswa.nama_mahasiswa,
+                    mata_kuliah.nama_mk
+                ')
+                ->join('mahasiswa', 'mahasiswa.nim = log_nilai.nim')
+                ->join('kelas', 'kelas.id_kelas = log_nilai.id_kelas')
+                ->join('mata_kuliah', 'mata_kuliah.kode_mk = kelas.kode_mk')
+                ->orderBy('log_nilai.waktu', 'DESC')
+                ->get()
+                ->getResultArray(),
+
+            'log_mahasiswa' => $db->table('log_mahasiswa')
+                ->orderBy('created_at', 'DESC')
+                ->get()
+                ->getResultArray(),
+
+            'log_dosen' => $db->table('log_dosen')
+                ->orderBy('created_at', 'DESC')
+                ->get()
+                ->getResultArray(),
+
+            'log_matakuliah' => $db->table('log_matakuliah')
+                ->orderBy('created_at', 'DESC')
+                ->get()
+                ->getResultArray(),
+
+            'log_kelas' => $db->table('log_kelas')
+                ->orderBy('created_at', 'DESC')
+                ->get()
+                ->getResultArray(),
+        ];
 
         return view('log_aktivitas/index', $data);
     }

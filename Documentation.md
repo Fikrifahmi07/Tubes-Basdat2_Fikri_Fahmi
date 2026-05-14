@@ -56,9 +56,14 @@ Sistem dibuat untuk membantu pengelolaan data akademik kampus seperti:
 - Pencarian pada setiap tabel laporan
 
 ### Log Aktivitas
-- Menampilkan aktivitas INSERT
-- Menampilkan aktivitas UPDATE
-- Menampilkan aktivitas DELETE
+- Menampilkan aktivitas INSERT  nilai
+- Menampilkan aktivitas UPDATE nilai
+- Menampilkan aktivitas DELETE nilai
+- Log Mahasiswa
+- Log Dosen
+- Log Mata Kuliah
+- Log Kelas
+- Realtime Search Log Aktivitas
 
 ### Login & logout Admin
 

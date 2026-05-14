@@ -1,172 +1,266 @@
 <?= $this->extend('layout/template') ?>
 <?= $this->section('content') ?>
 
-<div class="container-fluid">
+<div class="card shadow">
 
-    <!-- HEADER -->
-    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-
-        <div>
-            <h1 class="h3 mb-1 text-gray-800">
-                <i class="fas fa-history text-primary"></i>
-                Log Aktivitas Sistem
-            </h1>
-
-            <p class="text-muted mb-0">
-                Riwayat aktivitas transaksi nilai mahasiswa
-            </p>
-        </div>
-
-        <!-- BUTTON -->
-        <div>
-            <a href="<?= base_url('/') ?>" class="btn btn-secondary shadow-sm">
-                <i class="fas fa-arrow-left"></i>
-                Dashboard
-            </a>
-        </div>
-
+    <div class="card-header bg-success text-white">
+        <h3 class="card-title">
+            <i class="fas fa-history mr-2"></i>
+            Log Aktivitas Sistem
+        </h3>
     </div>
 
-    <!-- CARD -->
-    <div class="card">
+    <div class="card-body">
 
-        <!-- HEADER CARD -->
-        <div class="card-header d-flex justify-content-between align-items-center flex-wrap">
+        <!-- SEARCH -->
+        <div class="mb-4">
 
-            <h3 class="card-title mb-2 mb-md-0">
-                <i class="fas fa-table mr-2"></i>
-                Data Log Aktivitas
-            </h3>
+            <input
+                type="text"
+                id="searchLog"
+                class="form-control"
+                placeholder="Cari semua aktivitas log...">
 
-            <!-- SEARCH -->
-            <div class="input-group search-box">
+        </div>
 
-                <input type="text"
-                       id="searchLog"
-                       class="form-control"
-                       placeholder="Cari aktivitas...">
+        <!-- NAV TAB -->
+        <ul class="nav nav-pills mb-4" id="log-tab" role="tablist">
 
-                <div class="input-group-append">
-                    <span class="input-group-text bg-primary text-white">
-                        <i class="fas fa-search"></i>
-                    </span>
+            <li class="nav-item mr-2">
+                <a class="nav-link active"
+                   data-toggle="pill"
+                   href="#nilai">
+                    <i class="fas fa-chart-line mr-1"></i>
+                    Log Nilai
+                </a>
+            </li>
+
+            <li class="nav-item mr-2">
+                <a class="nav-link"
+                   data-toggle="pill"
+                   href="#mahasiswa">
+                    <i class="fas fa-user-graduate mr-1"></i>
+                    Mahasiswa
+                </a>
+            </li>
+
+            <li class="nav-item mr-2">
+                <a class="nav-link"
+                   data-toggle="pill"
+                   href="#dosen">
+                    <i class="fas fa-chalkboard-teacher mr-1"></i>
+                    Dosen
+                </a>
+            </li>
+
+            <li class="nav-item mr-2">
+                <a class="nav-link"
+                   data-toggle="pill"
+                   href="#matkul">
+                    <i class="fas fa-book mr-1"></i>
+                    Mata Kuliah
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link"
+                   data-toggle="pill"
+                   href="#kelas">
+                    <i class="fas fa-school mr-1"></i>
+                    Kelas
+                </a>
+            </li>
+
+        </ul>
+
+        <!-- TAB CONTENT -->
+        <div class="tab-content">
+
+            <!-- =========================
+                 LOG NILAI
+            ========================== -->
+            <div class="tab-pane fade show active" id="nilai">
+
+                <div class="table-responsive">
+
+                    <table class="table table-bordered table-hover">
+
+                        <thead class="bg-light">
+
+                            <tr>
+                                <th>No</th>
+                                <th>NIM</th>
+                                <th>Nama Mahasiswa</th>
+                                <th>Mata Kuliah</th>
+                                <th>Nilai Lama</th>
+                                <th>Nilai Baru</th>
+                                <th>Aksi</th>
+                                <th>Waktu</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <?php $no = 1; ?>
+
+                            <?php foreach($log_nilai as $log): ?>
+
+                            <tr class="log-item">
+
+                                <td><?= $no++ ?></td>
+
+                                <td><?= $log['nim'] ?></td>
+
+                                <td><?= $log['nama_mahasiswa'] ?></td>
+
+                                <td><?= $log['nama_mk'] ?></td>
+
+                                <td>
+                                    <span class="badge badge-danger">
+                                        <?= $log['nilai_lama'] ?>
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span class="badge badge-success">
+                                        <?= $log['nilai_baru'] ?>
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <?php if($log['aksi'] == 'INSERT'): ?>
+
+                                        <span class="badge badge-primary">
+                                            INSERT
+                                        </span>
+
+                                    <?php elseif($log['aksi'] == 'UPDATE'): ?>
+
+                                        <span class="badge badge-warning">
+                                            UPDATE
+                                        </span>
+
+                                    <?php else: ?>
+
+                                        <span class="badge badge-danger">
+                                            DELETE
+                                        </span>
+
+                                    <?php endif; ?>
+
+                                </td>
+
+                                <td><?= $log['waktu'] ?></td>
+
+                            </tr>
+
+                            <?php endforeach; ?>
+
+                        </tbody>
+
+                    </table>
+
                 </div>
 
             </div>
 
-        </div>
+            <!-- =========================
+                 LOG MAHASISWA
+            ========================== -->
+            <div class="tab-pane fade" id="mahasiswa">
 
-        <!-- BODY -->
-        <div class="card-body table-responsive">
+                <?php foreach($log_mahasiswa as $log): ?>
 
-            <table class="table table-bordered table-hover table-striped"
-                   id="tableLog">
+                <div class="timeline-item log-item">
 
-                <thead>
-                    <tr>
-                        <th>Waktu</th>
-                        <th>Mahasiswa</th>
-                        <th>Mata Kuliah</th>
-                        <th>Nilai Lama</th>
-                        <th>Nilai Baru</th>
-                        <th>Aksi</th>
-                    </tr>
-                </thead>
+                    <div class="timeline-icon bg-success">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
 
-                <tbody>
+                    <div class="timeline-content">
+                        <h6><?= $log['aktivitas'] ?></h6>
+                        <small><?= $log['created_at'] ?></small>
+                    </div>
 
-                    <?php if(empty($log)): ?>
+                </div>
 
-                    <tr>
-                        <td colspan="6" class="text-center text-muted">
-                            Belum ada aktivitas tercatat
-                        </td>
-                    </tr>
+                <?php endforeach; ?>
 
-                    <?php else: ?>
+            </div>
 
-                    <?php foreach ($log as $l): ?>
+            <!-- =========================
+                 LOG DOSEN
+            ========================== -->
+            <div class="tab-pane fade" id="dosen">
 
-                    <tr>
+                <?php foreach($log_dosen as $log): ?>
 
-                        <!-- WAKTU -->
-                        <td>
-                            <i class="far fa-clock text-secondary"></i>
-                            <?= $l['waktu'] ?>
-                        </td>
+                <div class="timeline-item log-item">
 
-                        <!-- MAHASISWA -->
-                        <td>
-                            <strong><?= $l['nama_mahasiswa'] ?></strong>
-                        </td>
+                    <div class="timeline-icon bg-warning">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
 
-                        <!-- MATA KULIAH -->
-                        <td>
-                            
-                                <?= $l['nama_mk'] ?? '-' ?>
-                            
-                        </td>
+                    <div class="timeline-content">
+                        <h6><?= $log['aktivitas'] ?></h6>
+                        <small><?= $log['created_at'] ?></small>
+                    </div>
 
-                        <!-- NILAI LAMA -->
-                        <td class="text-center">
+                </div>
 
-                           
-                                <?= $l['nilai_lama'] ?>
-                           
+                <?php endforeach; ?>
 
-                        </td>
+            </div>
 
-                        <!-- NILAI BARU -->
-                        <td class="text-center">
+            <!-- =========================
+                 LOG MATA KULIAH
+            ========================== -->
+            <div class="tab-pane fade" id="matkul">
 
-                            
-                                <?= $l['nilai_baru'] ?? '-' ?>
-                           
+                <?php foreach($log_matakuliah as $log): ?>
 
-                        </td>
+                <div class="timeline-item log-item">
 
-                        <!-- AKSI -->
-                        <td>
+                    <div class="timeline-icon bg-info">
+                        <i class="fas fa-book"></i>
+                    </div>
 
-                            <span class="badge badge-<?=
-                                $l['aksi'] == 'UPDATE' ? 'warning' :
-                                ($l['aksi'] == 'DELETE' ? 'danger' : 'success')
-                            ?>">
+                    <div class="timeline-content">
+                        <h6><?= $log['aktivitas'] ?></h6>
+                        <small><?= $log['created_at'] ?></small>
+                    </div>
 
-                                <?php if($l['aksi'] == 'INSERT'): ?>
+                </div>
 
-                                    <i class="fas fa-plus-circle"></i>
-                                    INSERT
+                <?php endforeach; ?>
 
-                                <?php elseif($l['aksi'] == 'UPDATE'): ?>
+            </div>
 
-                                    <i class="fas fa-edit"></i>
-                                    UPDATE
+            <!-- =========================
+                 LOG KELAS
+            ========================== -->
+            <div class="tab-pane fade" id="kelas">
 
-                                <?php elseif($l['aksi'] == 'DELETE'): ?>
+                <?php foreach($log_kelas as $log): ?>
 
-                                    <i class="fas fa-trash"></i>
-                                    DELETE
+                <div class="timeline-item log-item">
 
-                                <?php else: ?>
+                    <div class="timeline-icon bg-danger">
+                        <i class="fas fa-school"></i>
+                    </div>
 
-                                    <?= $l['aksi'] ?>
+                    <div class="timeline-content">
+                        <h6><?= $log['aktivitas'] ?></h6>
+                        <small><?= $log['created_at'] ?></small>
+                    </div>
 
-                                <?php endif; ?>
+                </div>
 
-                            </span>
+                <?php endforeach; ?>
 
-                        </td>
-
-                    </tr>
-
-                    <?php endforeach; ?>
-
-                    <?php endif; ?>
-
-                </tbody>
-
-            </table>
+            </div>
 
         </div>
 
@@ -174,112 +268,90 @@
 
 </div>
 
-<!-- SEARCH -->
+<style>
+
+.nav-pills .nav-link{
+    border-radius: 10px;
+    padding: 10px 18px;
+    font-weight: 600;
+}
+
+.timeline-item{
+    display: flex;
+    align-items: start;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 12px;
+    background: #f8f9fa;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.timeline-icon{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.timeline-content h6{
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.timeline-content small{
+    color: #777;
+}
+
+</style>
+
 <script>
 
-document.getElementById("searchLog").addEventListener("keyup", function(){
+document.addEventListener('DOMContentLoaded', function(){
 
-    let filter = this.value.toLowerCase();
+    const searchInput = document.getElementById('searchLog');
 
-    let rows = document.querySelectorAll("#tableLog tbody tr");
+    searchInput.addEventListener('keyup', function(){
 
-    rows.forEach(function(row){
+        let keyword = this.value.toLowerCase();
 
-        let text = row.innerText.toLowerCase();
+        // hanya cari di tab aktif
+        let activeTab = document.querySelector('.tab-pane.active');
 
-        if(text.includes(filter)){
-            row.style.display = "";
-        }else{
-            row.style.display = "none";
-        }
+        let items = activeTab.querySelectorAll('.log-item');
+
+        items.forEach(function(item){
+
+            let text = item.textContent.toLowerCase();
+
+            if(text.includes(keyword)){
+
+                if(item.tagName === 'TR'){
+
+                    item.style.display = 'table-row';
+
+                }else{
+
+                    item.style.display = 'flex';
+
+                }
+
+            }else{
+
+                item.style.display = 'none';
+
+            }
+
+        });
 
     });
 
 });
 
 </script>
-
-<!-- STYLE -->
-<style>
-
-.content-wrapper{
-    background: #f4f6f9;
-}
-
-/* CARD */
-.card{
-    border: none;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
-}
-
-.card-header{
-    background: white;
-    border-bottom: 1px solid #eee;
-    padding: 18px 22px;
-}
-
-.card-title{
-    font-weight: 700;
-    color: #333;
-}
-
-/* TABLE */
-.table{
-    margin-bottom: 0;
-}
-
-.table thead th{
-    background: #f8f9fc;
-    text-align: center;
-    vertical-align: middle;
-    font-weight: 700;
-}
-
-.table tbody td{
-    vertical-align: middle;
-}
-
-.table-hover tbody tr:hover{
-    background: rgba(0,123,255,0.05);
-}
-
-/* BADGE */
-.badge{
-    padding: 7px 12px;
-    border-radius: 8px;
-    font-size: 0.85rem;
-}
-
-/* SEARCH */
-.search-box{
-    width: 260px;
-}
-
-.form-control{
-    border-radius: 8px;
-}
-
-.input-group-text{
-    border-radius: 0 8px 8px 0;
-}
-
-/* RESPONSIVE */
-@media (max-width:768px){
-
-    .search-box{
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .card-header{
-        flex-direction: column;
-        align-items: stretch !important;
-    }
-
-}
-
-</style>
 
 <?= $this->endSection() ?>
