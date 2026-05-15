@@ -85,6 +85,8 @@ $routes->get('/logout', 'Auth::logout');
 
 $routes->match(['get', 'post'], 'schema', 'Schema::index');
 
+$routes->get('transkrip/pdf/(:any)', 'Transkrip::exportPdf/$1');
+
 /*
  * Load environment Routes
  */

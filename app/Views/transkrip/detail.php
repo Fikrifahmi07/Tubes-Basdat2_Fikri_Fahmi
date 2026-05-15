@@ -57,4 +57,13 @@
     </div>
 </div>
 
+<a href="<?= base_url('transkrip/pdf/' . $transkrip[0]['nim']) ?>"
+   target="_blank"
+   class="btn btn-danger mb-3">
+
+    <i class="fas fa-file-pdf"></i>
+    Export PDF
+
+</a>
+
 <?= $this->endSection() ?>

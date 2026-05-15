@@ -137,3 +137,14 @@
 - Memperbaiki dynamic table rendering
 - Memperbaiki realtime search log
 - Memperbaiki integrasi trigger database
+
+# Version 1.9.3
+
+## Added
+- Menambahkan fitur export PDF transkrip mahasiswa
+- Menambahkan integrasi Dompdf
+- Menambahkan perhitungan IPK pada transkrip PDF
+
+## Fixed
+- Memperbaiki tampilan log aktivitas
+- Memperbaiki pencarian log aktivitas

@@ -197,3 +197,37 @@ Realtime filtering data log menggunakan JavaScript tanpa reload halaman.
 - trg_insert_nilai
 - trg_log_update
 - trg_log_delete
+
+# Export PDF Transkrip
+
+## Endpoint
+GET /transkrip/pdf/{nim}
+
+---
+
+## Controller
+Transkrip.php
+
+---
+
+## Method
+exportPdf($nim)
+
+---
+
+## Deskripsi
+Digunakan untuk mencetak transkrip nilai mahasiswa dalam format PDF.
+
+---
+
+## Parameter
+
+| Nama | Tipe |
+|---|---|
+| nim | string |
+
+---
+
+## Response Success
+
+File PDF Transkrip Mahasiswa berhasil dibuat.

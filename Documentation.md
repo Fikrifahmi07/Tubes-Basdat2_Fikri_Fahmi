@@ -47,6 +47,7 @@ Sistem dibuat untuk membantu pengelolaan data akademik kampus seperti:
 ### Transkrip
 - Menampilkan transkrip nilai mahasiswa
 - Menampilkan status kelulusan mahasiswa
+- Export PDF Transkrip Mahasiswa
 
 ### Laporan
 - Statistik nilai mata kuliah
